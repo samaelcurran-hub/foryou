@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday!! ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- SCREEN 1: WELCOME -->
+
+    <section class="screen active" id="welcome">
+
+        <div class="main-card">
+
+            <div class="cat">🐱</div>
+
+            <h1>HEY!!</h1>
+
+            <h2>HAPPY BIRTHDAY!!</h2>
+
+            <h3>I made something for you</h3>
+
+            <p class="script-text">
+                Do you want to see it?
+            </p>
+
+            <div class="buttons">
+
+                <button onclick="showLetter()">
+                    Yes
+                </button>
+
+                <button onclick="showNo()">
+                    No
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="decoration left">❤️</div>
+        <div class="decoration right">🎀</div>
+
+    </section>
+
+
+    <!-- SCREEN 2: NO BUTTON -->
+
+    <section class="screen" id="noScreen">
+
+        <div class="main-card">
+
+            <div class="angry-cat">😾</div>
+
+            <h1>HOW DARE YOU!!!</h1>
+
+            <button onclick="goBack()">
+                Click back
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 3: CLOSED ENVELOPE -->
+
+    <section class="screen" id="envelopeScreen">
+
+        <div class="main-card">
+
+            <h2>A special letter for you</h2>
+
+            <p class="subtitle">
+                I wrote something just for you.
+            </p>
+
+            <div class="closed-envelope"
+                 id="envelope"
+                 onclick="openEnvelope()">
+
+                <!-- Envelope back -->
+                <div class="envelope-body"></div>
+
+                <!-- Paper inside envelope -->
+                <div class="envelope-letter">
+                    <p>For you, my love ♡</p>
+                </div>
+
+                <!-- Envelope front pocket -->
+                <div class="envelope-front"></div>
+
+                <!-- Envelope flap -->
+                <div class="envelope-flap"></div>
+
+                <!-- Wax seal -->
+                <div class="wax-seal">♥</div>
+
+            </div>
+
+            <p class="script-text">
+                Click the envelope to open
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 4: OPENED ENVELOPE -->
+
+    <section class="screen" id="openedScreen">
+
+        <div class="main-card">
+
+            <h2>Your letter is waiting ♡</h2>
+
+            <p class="subtitle">
+                A little message from me to you.
+            </p>
+
+            <div class="open-envelope"
+                 onclick="readLetter()">
+
+                <div class="paper-preview">
+
+                    <p>
+                        Happy birthday to my favorite person...
+                    </p>
+
+                    <span>♡</span>
+
+                </div>
+
+                <div class="open-envelope-body"></div>
+
+            </div>
+
+            <button onclick="readLetter()">
+                Tap the letter
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 5: FULL BIRTHDAY LETTER -->
+
+    <section class="screen" id="finalScreen">
+
+        <div class="main-card final-card">
+
+            <div class="hearts">
+                ♥ ♥ ♥
+            </div>
+
+            <div class="full-letter">
+
+                <h2>Happy Birthday, Shin! ♡</h2>
+
+                <p>
+                    I'd like to say thank you for being my safest place. 
+                    well done you've come this far :> I'm so proud of you for making it this far.
+                    </p>
+
+                <p>
+                   I hope someday you find the love that you've been looking for,
+                    and that the world is gentle with you.
+                </p>
+
+                <p>
+                   I might not know exactly what you're going through, but I see all your hard work.
+                   Take your time, and don't pressure yourself to figure it all out right now.
+                    
+                </p>
+
+
+                <p>
+                    Enjoy your special day!
+                </p>
+
+                <div class="signature">
+
+                    With all my love,
+                    <br>
+                    Raiiiiiiiiiiii♡
+
+                </div>
+
+            </div>
+
+            <div class="hearts">
+                ♥ ♥ ♥
+            </div>
+
+            <p class="footer">
+                I hope u like it:>>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="bgMusic" loop>
+        <source src="Nothing's Gonna Hurt You Baby - Cigarettes After Sex.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- MUSIC PLAYER -->
+
+    <button id="musicBtn"
+            class="music-button"
+            onclick="toggleMusic()">
+
+        ♫ Play Music
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
